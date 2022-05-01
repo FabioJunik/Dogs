@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
         --type-first: Helvetica, Arial, sans-serif;
         --type-second: 'Spectral', Georgia;
         font-family: var(--type-first);
-
+        padding-top: 4rem;
     }
 
     img{

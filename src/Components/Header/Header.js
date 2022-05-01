@@ -1,15 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { } from '../Home/HomeStyles';
+import {Container, Nav, Logo, UserIcon } from './HeaderStyles';
 
 const Header = () => {
   return (
-    <header>
-        <nav className='container'>
-            <Link to="/">Home</Link>
-            <Link to="/login">Login / Criar</Link>
-        </nav>
-    </header>
+    <Container>
+        <Nav className='container'>
+            <Link to="/" aria-label='Dogs - Home'><Logo/></Link>
+            <Link to="/login">
+              <span>Login / Criar</span> 
+              <UserIcon/>
+            </Link>
+        </Nav>
+    </Container>
   )
 }
 
