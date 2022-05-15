@@ -28,3 +28,8 @@ export const Label = styled.label`
     line-height: 1;
     padding-bottom: .5rem;
 `;
+
+export const Error = styled.p`
+    color: red;
+    margin-top: 0.87rem;
+`;
