@@ -1,4 +1,4 @@
-import React, { } from 'react';
+import React, { useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { TOKEN_POST, USER_GET } from '../../../api';
 import useForm from '../../../Hooks/useForm';
@@ -9,6 +9,12 @@ const LoginForm = () => {
   
   const username = useForm('');
   const password = useForm('');
+
+  useEffect(()=>{
+    const token = window.localStorage.getItem('token');
+    if(token) 
+      getUser(token)
+  },[])
 
   async function getUser(token){
     const {url, options} = USER_GET(token);
