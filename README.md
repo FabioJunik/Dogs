@@ -1,5 +1,5 @@
 # Dogs
 
-### Una rede social de postagens de cães 
+### Una rede social para postagens de fotos cães 
 
 ## Projecto em construção ⏳🔨
